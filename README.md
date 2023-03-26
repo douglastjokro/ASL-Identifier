@@ -13,11 +13,15 @@ This is a program that can identify sign language from a camera using OpenCV. It
 - Numpy
 - Scikit-learn
 
-## Usage
-Run **dataInput.py** to capture the image samples. This will create a new directory named sign_language_dataset and populate it with images of the sign language alphabets.
-Run **dataSetBuild.py** to process the captured images and create a new file named signdata.pickle.
-Run **trainer.py** to train the model using the data in signdata.pickle. This will create a new file named trainedModel.p.
-Run **classifier.py** to start the webcam and predict the sign language from your hand gestures.
+## Installation
+- Clone the repo
+- Install the dependencies using '**pip install -r requirements.txt**'
+
+## Execution
+1. Run **dataInput.py** to capture the image samples. This will create a new directory named sign_language_dataset and populate it with images of the sign language alphabets.
+2. Run **dataSetBuild.py** to process the captured images and create a new file named signdata.pickle.
+3. Run **trainer.py** to train the model using the data in signdata.pickle. This will create a new file named trainedModel.p.
+4. Run **classifier.py** to start the webcam and predict the sign language from your hand gestures.
 
 ## Credits
 This program was developed by Douglas Tjokrosetio and is based on the Mediapipe library from Google.
