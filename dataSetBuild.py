@@ -39,13 +39,16 @@ for dir_ in os.listdir(DATA_DIR):
 
         # if any hand landmarks are detected in the image, loop through them
         if results.multi_hand_landmarks:
+            
             for hand_landmarks in results.multi_hand_landmarks:
+                
                 # loop through each landmark and add its x and y coordinates to the corresponding lists
                 for i in range(len(hand_landmarks.landmark)):
                     x = hand_landmarks.landmark[i].x
                     y = hand_landmarks.landmark[i].y
                     x_.append(x)
                     y_.append(y)
+                    
                 # loop through each landmark again and add its normalized x and y coordinates to data_aux
                 for i in range(len(hand_landmarks.landmark)):
                     x = hand_landmarks.landmark[i].x
